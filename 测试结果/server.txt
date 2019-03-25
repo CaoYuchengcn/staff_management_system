@@ -1,0 +1,95 @@
+linux@linux:~/Desktop/y员工管理系$ make
+gcc server.c -lpthread -lsqlite3 -o server
+gcc client.c -o client
+linux@linux:~/Desktop/y员工管理系$ ./server 192.168.1.182 9999
+sockfd :3.
+创建用户信息表成功.
+创建历史表成功.
+创建数据库成功！ 
+ 
+请输入工号>>1
+id : 1
+姓名>>1
+name : 1
+年龄>>1
+age : 1
+电话>>1
+phone : 1
+家庭地址>>1
+homeaddr : 1
+职位>>1
+post : 1
+入职日期>>1
+inevent : 1
+等级>>1
+level : 1
+工资>>1
+wages : 1
+密码>>1
+passwd : 1
+权限（1：ROOT 2：USER）>>1
+jurisdiction : 1
+do insttall start! 
+判断插入
+insert data to stu success.
+插入历史记录成功.
+本地插入成功
+CMD : 4
+登录请求
+--1--1-- 
+sql->1    client->1
+ROOT登录成功! 
+插入历史记录成功.
+CMD : 64
+查询信息请求
+插入历史记录成功.
+CMD : 256
+查询所以信息请求插入历史记录成功.
+CMD : 8
+插入请求
+do insttall start! 
+判断插入
+insert data to stu success.
+插入历史记录成功.
+CMD : 256
+查询所以信息请求插入历史记录成功.
+CMD : 32
+数据更新请求存在该用户!
+CMD : 32
+数据更新请求插入历史记录成功.
+CMD : 256
+查询所以信息请求插入历史记录成功.
+CMD : 8
+插入请求
+do insttall start! 
+判断插入
+insert data to stu success.
+插入历史记录成功.
+CMD : 256
+查询所以信息请求插入历史记录成功.
+CMD : 16
+数据删除请求删除成功.
+插入历史记录成功.
+CMD : 256
+查询所以信息请求插入历史记录成功.
+CMD : 128
+历史查询请求
+插入历史记录成功.
+CMD : 4
+登录请求
+--2--2-- 
+sql->2    client->2
+USER 登录成功！ 
+插入历史记录成功.
+CMD : 512
+USER查询信息请求
+插入历史记录成功.
+CMD : 1024
+USER更新信息请求
+插入历史记录成功.
+CMD : 512
+USER查询信息请求
+插入历史记录成功.
+设备离线
+^C
+
